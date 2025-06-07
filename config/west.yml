@@ -12,8 +12,8 @@ manifest:
   self:
     path: config
 
-  build:
-    - board: zmk-rp2040
-      shield: totem_left
-    - board: zmk-rp2040
-      shield: totem_right
+build:
+  - board: seeeduino_xiao_ble
+    shield: totem_left
+  - board: seeeduino_xiao_ble
+    shield: totem_right
