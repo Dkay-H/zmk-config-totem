@@ -2,10 +2,18 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
+
   projects:
     - name: zmk
       remote: zmkfirmware
       revision: main
       import: app/west.yml
+
   self:
     path: config
+
+  build:
+    - board: zmk-rp2040
+      shield: totem_left
+    - board: zmk-rp2040
+      shield: totem_right
