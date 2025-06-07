@@ -40,10 +40,30 @@
             bindings = <&kp ESC>;
         };
 
-        combo_tvp {
+        combo_COPY {
             timeout-ms = <100>;
-            key-positions = <11 12 13>;
-            bindings = <&tog TVP1>;
+            key-positions = <22 23>;
+            bindings = <&kp RC(C)>;
+        };
+
+        PAST {
+            bindings = <&kp LC(V)>;
+            key-positions = <23 24>;
+        };
+
+        CLIP {
+            bindings = <&kp LC(X)>;
+            key-positions = <21 22>;
+        };
+
+        UNGROUP {
+            bindings = <&kp LA(LC(S))>;
+            key-positions = <20 10>;
+        };
+
+        BACK_PAGE {
+            bindings = <&kp LA(LEFT_ARROW)>;
+            key-positions = <15 16>;
         };
     };
 
